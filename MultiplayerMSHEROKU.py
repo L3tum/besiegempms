@@ -150,5 +150,5 @@ class MSHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 
 handler = MSHandler
 
-httpd = BaseHTTPServer.HTTPServer((HOST_NAME, 0000), handler)
+httpd = BaseHTTPServer.HTTPServer((""), handler)
 httpd.serve_forever()
